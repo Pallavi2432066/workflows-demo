@@ -1,0 +1,46 @@
+# .github/workflows/manual-diagnostics.yml
+name: Manual Diagnostics Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  start:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Manual workflow started"
+
+  check-env:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Checking environment"
+
+  fetch-config:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Fetching configurations"
+
+  build-assets:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Building assets"
+
+  run-diagnostics:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Running diagnostics"
+
+  clean-up:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Cleaning temporary files"
+
+  summary:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Preparing summary"
+
+  finish:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Manual workflow finished successfully"
