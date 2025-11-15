@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Manual workflow started"
+      - run: exit 1
 
   check-env:
     runs-on: ubuntu-latest
