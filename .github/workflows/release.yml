@@ -4,7 +4,7 @@ name: Release Tag Pipeline
 on:
   push:
     tags:
-      - "v*"
+      - "v"
 
 jobs:
   start:
