@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Initializing on feature branch"
+      - run: exit 1
 
   validate:
     runs-on: ubuntu-latest
