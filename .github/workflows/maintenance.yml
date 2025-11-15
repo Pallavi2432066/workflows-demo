@@ -2,6 +2,7 @@
 name: Nightly Maintenance Workflow
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: "*/2 * * * *"   # runs every night at 2 AM UTC
 
