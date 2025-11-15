@@ -4,13 +4,14 @@ name: Release Tag Pipeline
 on:
   push:
     tags:
-      - "v*"
+      - "v"
 
 jobs:
   start:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Tag detected"
+      - run: exit 1
 
   build-release:
     runs-on: ubuntu-latest
