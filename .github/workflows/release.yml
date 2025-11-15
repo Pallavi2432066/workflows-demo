@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Tag detected"
-      -run: exit 1
+      - run: exit 1
 
   build-release:
     runs-on: ubuntu-latest
